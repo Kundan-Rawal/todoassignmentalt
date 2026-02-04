@@ -1,0 +1,107 @@
+.dashboard-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.btn-logout {
+  background: transparent;
+  color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+  padding: 5px 15px;
+  font-size: 0.9rem;
+}
+
+.btn-logout:hover {
+  background: var(--danger-color);
+  color: white;
+}
+
+/* Input Section */
+.todo-input-section form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.todo-input-section input {
+  flex-grow: 1;
+}
+
+.btn-add {
+  background-color: var(--success-color);
+  color: white;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item:hover {
+  background-color: #fafafa;
+}
+
+.todo-text {
+  cursor: pointer;
+  flex-grow: 1;
+  font-size: 1.1rem;
+}
+
+/* Completed State */
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.btn-delete {
+  background-color: transparent;
+  color: #999;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.btn-delete:hover {
+  color: var(--danger-color);
+}
+
+.empty-state {
+  text-align: center;
+  color: #888;
+  padding: 2rem;
+  font-style: italic;
+}

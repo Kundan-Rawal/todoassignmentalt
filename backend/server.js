@@ -18,6 +18,9 @@ app.use(cors({
     credentials: true
 }));
 
+
+
+
 // Routes
 app.use('/auth', authRoutes);
 app.use('/todos', todoRoutes);
