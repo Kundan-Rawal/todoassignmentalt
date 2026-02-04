@@ -1,6 +1,6 @@
 import express from 'express';
-import pool from '../db.js';        // Note the .js extension
-import verifyToken from '../middleware/authentication.js'; // Note the .js extension
+import pool from '../db.js'; 
+import verifyToken from '../middleware/authentication.js'; 
 
 const router = express.Router();
 

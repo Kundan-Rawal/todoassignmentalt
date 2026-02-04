@@ -12,9 +12,9 @@ const pool = new Pool({
     }
 });
 
-// Test the connection immediately
+
 pool.query('SELECT NOW()')
-    .then(() => console.log("✅ Connected to Neon PostgreSQL successfully"))
-    .catch((err) => console.error("❌ Database connection error:", err));
+    .then(() => console.log("Connection success"))
+    .catch((err) => console.error("Error Connecting Database", err));
 
 export default pool;
